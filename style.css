@@ -46,7 +46,7 @@ h2 {
 }
 
 /* === Input Styling === */
-/* input {
+input {
     width: 100%;
     padding: 12px 15px;
     margin: 8px 0;
@@ -66,10 +66,10 @@ input::placeholder {
 input:focus {
     background: rgba(255,255,255,0.3);
     transform: scale(1.03);
-} */
+}
 
 /* === Buttons === */
-/* button {
+button {
     width: 100%;
     padding: 12px;
     margin-top: 10px;
@@ -87,7 +87,7 @@ button:hover {
     background: #ffd95e;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-} */
+}
 
 /* Reload button styling separately */
 .content > button:last-of-type {
