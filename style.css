@@ -1,8 +1,4 @@
-
-
-
-/* === Global Reset === */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,19 +6,16 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0000008f, #0354f793), url(./bg.jpg);
-    /* background-image: ; */
+    background: linear-gradient(135deg, #0000008f, #0354f793);
+
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-position: top;
-    background-size: cover;
     padding: 20px;
     animation: fadeIn 1s ease-in-out;
 }
 
-/* === Container Styling === */
 .container {
     width: 100%;
     max-width: 420px;
@@ -33,7 +26,7 @@ body {
     padding: 30px;
     border-radius: 15px;
     backdrop-filter: blur(12px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     animation: popUp 0.8s ease;
     color: white;
 }
@@ -45,7 +38,6 @@ h2 {
     letter-spacing: 1px;
 }
 
-/* === Input Styling === */
 input {
     width: 100%;
     padding: 12px 15px;
@@ -53,7 +45,7 @@ input {
     border-radius: 10px;
     border: none;
     outline: none;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     color: white;
     font-size: 16px;
     transition: 0.3s ease;
@@ -64,11 +56,10 @@ input::placeholder {
 }
 
 input:focus {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     transform: scale(1.03);
 }
 
-/* === Buttons === */
 button {
     width: 100%;
     padding: 12px;
@@ -86,29 +77,28 @@ button {
 button:hover {
     background: #ffd95e;
     transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Reload button styling separately */
-.content > button:last-of-type {
+.content>button:last-of-type {
     background: #ef5350;
     color: white;
     margin-top: 15px;
 }
 
-.content > button:last-of-type:hover {
+.content>button:last-of-type:hover {
     background: #ff6f6b;
 }
 
 .result {
 
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     text-align: center;
     margin-top: 20px;
     padding: 20px;
     min-height: 80px;
-    max-height: 260px;       /* LIMIT HEIGHT */
-    overflow-y: auto;        /* ENABLE VERTICAL SCROLL */
+    max-height: 260px;
+    overflow-y: auto;
     border-radius: 10px;
     color: #fff;
     line-height: 1.7;
@@ -117,49 +107,67 @@ button:hover {
     animation: slideUpFade 0.7s ease forwards;
 }
 
-/* === Scrollbar Styling (Elegant) === */
 .result::-webkit-scrollbar {
     width: 8px;
 }
 
 .result::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 
 .result::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     transition: 0.3s ease;
 }
 
 .result::-webkit-scrollbar-thumb:hover {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
 }
 
-/* === Animations === */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes popUp {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes slideUpFade {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* === Responsive === */
+
+
 @media (max-width: 480px) {
     h2 {
         font-size: 24px;
     }
+
     .content {
         padding: 25px;
     }
-}
-
+} */
