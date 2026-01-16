@@ -1,30 +1,30 @@
 
 
-let showResult = "" 
+// let showResult = ""
 
-function result(){
-    
-        let table = +(document.getElementById("table").value) 
-        let range = +(document.getElementById("range").value)
+// function result() {
 
-        if(table === 0 || range === 0){
-            alert("Please Fill the table number and range")
-        }
+//     let table = +(document.getElementById("table").value)
+//     let range = +(document.getElementById("range").value)
 
-        else{
+//     if (table === 0 || range === 0) {
+//         alert("Please Fill the table number and range")
+//     }
 
-            
-        for (i = 1; i<=range; i++){     
-            showResult += `${table} x ${i} = ${table*i} <br>`
-            document.getElementById("result").innerHTML = showResult         
-        }  
-        
-        document.getElementById("table").value = ""
-        document.getElementById("range").value = ""
+//     else {
 
-        }
-}
 
-function reload(){
-    window.location.reload();
-}
+//         for (i = 1; i <= range; i++) {
+//             showResult += `${table} x ${i} = ${table * i} <br>`
+//             document.getElementById("result").innerHTML = showResult
+//         }
+
+//         document.getElementById("table").value = ""
+//         document.getElementById("range").value = ""
+
+//     }
+// }
+
+// function reload() {
+//     window.location.reload();
+// }
